@@ -1,0 +1,169 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+.container {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.navigation {
+    height: 600px;
+    background-image: url("wedding.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.navigation ul {
+    display: flex;
+    padding: 30px;
+    margin: 0;
+    list-style-type: none
+}
+.navigation ul li{
+    display: inline-block;
+    margin: 0 36px 0 0;
+}
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 30px;
+}
+.navigation ul li a {
+    text-decoration: none;
+}
+.welcome {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+.nice {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 60px;
+}
+button {
+    background-color: #ffd106;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.main-text {
+    text-align:center;
+}
+.services-text-italic {
+    font-family: 'Poppins', sans-serif;
+}
+.section-text-2 {
+    text-align: center;
+}
+.services-icons-text {
+    display: flex;
+    justify-content: space-around;
+}
+ .services-icons-text li i {
+    font-size: 50px;
+    outline-color: #ffd106;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #ffd106;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: medium;
+    
+}
+ul {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 30px;
+}
+.services-icons-text li h4 {
+    width: 400px;
+    margin: 30px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.our-portfolio {
+    background-color: #dbdcde;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 30px;
+}
+.our-portfolio h3 {
+    font-family: 'Poppins', sans-serif;
+}
+.grid-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    
+    
+    
+}
+.grid-wrapper img {
+    height: 300px;
+    width: 250px;
+    background-position: center;
+    object-fit: cover;
+    
+    
+}
+.grid-wrapper h2 {
+    font-size: 20px;;
+}.grid-wrapper h3 {
+    font-size: 16px;
+}
+.social-media .container h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.social-media .container .social-media-list {
+    display: flex;
+    width: 300px;
+    list-style-type: none;
+    justify-content: flex-start;
+}
+.social-media .container .social-media-list li i {
+    font-size: 20px;
+    background-color: #ffd106;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: medium;
+}
+/*Media*/
+@media (max-width: 768px) {
+/*ul {
+    flex-direction: column;
+}*/
+.grid-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+}
+.social-media .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+ul li  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
